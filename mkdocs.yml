@@ -1,0 +1,171 @@
+# Project information
+site_name: 'Material for MkDocs'
+site_author: 'MarkoXu'
+site_url: ''
+site_description: 'my-mkdocs build page'
+
+# Repository
+repo_name: 'MarkoXyz/my-mkdocs'
+repo_url: 'https://github.com/MarkoXyz/my-mkdocs'
+edit_uri: ''
+docs_dir: 'site/content'
+site_dir: 'output'
+
+# Copyright
+copyright: Copyright &copy; 2021 MarkoXu
+
+# Extra CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Configuration
+theme:
+  name: material
+  custom_dir: site/overrides
+  language: 'en'
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  font: false
+  icon:
+    repo: fontawesome/brands/github
+    logo: logo
+  favicon: assets/images/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.instant
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - search:
+      lang: 'jp'
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+    - icon: fontawesome/brands/weixin
+      link: https://weixin.qq.com/
+    - icon: fontawesome/brands/weibo
+      link: https://weibo.com
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<email-address>
+
+# Page tree
+nav:
+  - Home: index.md
+  - Documentation:
+    - Overview: docs/overview.md
+    - Getting Started:
+      - Install Copilot: docs/getting-started/install.md
+      - (Optional) Verify the installation: docs/getting-started/verify.md
+      - Deploy your first application: docs/getting-started/first-app-tutorial.md
+    - Concepts:
+      - Overview: docs/concepts/overview.md
+      - Applications: docs/concepts/applications.md
+      - Environments: docs/concepts/environments.md
+      - Services: docs/concepts/services.md
+      - Jobs: docs/concepts/jobs.md
+      - Pipelines: docs/concepts/pipelines.md
+    - Credentials: docs/credentials.md
+    - Manifest:
+      - Overview: docs/manifest/overview.md
+      - Load Balanced Web Service: docs/manifest/lb-web-service.md
+      - Backend Service: docs/manifest/backend-service.md
+      - Scheduled Job: docs/manifest/scheduled-job.md
+      - Pipeline: docs/manifest/pipeline.md
+    - Developing:
+      - Environment Variables: docs/developing/environment-variables.md
+      - Secrets: docs/developing/secrets.md
+      - Service Discovery: docs/developing/service-discovery.md
+      - Additional AWS Resources: docs/developing/additional-aws-resources.md
+      - Sidecars: docs/developing/sidecars.md
+    - Commands:
+      - Getting Started:
+        - init: docs/commands/init.md
+        - docs: docs/commands/docs.md
+      - Develop:
+        - app init: docs/commands/app-init.md
+        - app ls: docs/commands/app-ls.md
+        - app show: docs/commands/app-show.md
+        - app delete: docs/commands/app-delete.md
+        - env init: docs/commands/env-init.md
+        - env ls: docs/commands/env-ls.md
+        - env show: docs/commands/env-show.md
+        - env delete: docs/commands/env-delete.md
+        - job init: docs/commands/job-init.md
+        - job ls: docs/commands/job-ls.md
+        - job package: docs/commands/job-package.md
+        - job deploy: docs/commands/job-deploy.md
+        - job delete: docs/commands/job-delete.md
+        - svc init: docs/commands/svc-init.md
+        - svc ls: docs/commands/svc-ls.md
+        - svc show: docs/commands/svc-show.md
+        - svc logs: docs/commands/svc-logs.md
+        - svc status: docs/commands/svc-status.md
+        - svc package: docs/commands/svc-package.md
+        - svc deploy: docs/commands/svc-deploy.md
+        - svc delete: docs/commands/svc-delete.md
+        - task run: docs/commands/task-run.md
+        - task delete: docs/commands/task-delete.md
+      - Release:
+        - pipeline init: docs/commands/pipeline-init.md
+        - pipeline update: docs/commands/pipeline-update.md
+        - pipeline ls: docs/commands/pipeline-ls.md
+        - pipeline show: docs/commands/pipeline-show.md
+        - pipeline status: docs/commands/pipeline-status.md
+        - pipeline delete: docs/commands/pipeline-delete.md
+        - deploy: docs/commands/deploy.md
+      - Addons:
+        - storage init: docs/commands/storage-init.md
+      - Settings:
+        - version: docs/commands/version.md
+        - completion: docs/commands/completion.md
+  - Community:
+      - Get Involved: community/get-involved.md
+      - Guides and resources: community/guides.md
+
