@@ -2,11 +2,11 @@
 site_name: 'Material for MkDocs'
 site_author: 'MarkoXu'
 site_url: ''
-site_description: 'my-mkdocs build page'
+site_description: 'mkdocs build page'
 
 # Repository
-repo_name: 'MarkoXyz/my-mkdocs'
-repo_url: 'https://github.com/MarkoXyz/my-mkdocs'
+repo_name: 'MarkoXyz/Documents'
+repo_url: 'https://github.com/MarkoXyz/Documents'
 edit_uri: ''
 docs_dir: 'site/content'
 site_dir: 'output'
