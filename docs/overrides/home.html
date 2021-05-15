@@ -1,0 +1,153 @@
+{#-
+This file was automatically generated - do not edit
+-#}
+
+
+{% extends "main.html" %}
+
+
+{% block announce %}
+<marquee behavior="alternate" direction="right" scrollamount="2">
+    <span class="twemoji">
+        {% include ".icons/fontawesome/solid/volume-up.svg" %}
+    </span>
+    <strong>Welcome to MarkoXu Blog.</strong>
+</marquee>
+{% endblock %}
+
+
+{% block tabs %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="../../../assets/css/home.css">
+<div class="md-container tx-hero">
+    <div class="md-grid md-typeset">
+        <div class="md-main__inner">
+            <div class="information-wrapper">
+                <div class="responsive-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="avatar">
+                                <img alt="avatar" src="../../../assets/images/avatar.png"/>
+                            </div>
+                            <div class="information">
+                                <h5>MarkoXu</h5>
+                                <li>
+                                    <span class="twemoji">{% include ".icons/octicons/location-16.svg" %}</span>
+                                    <a>Shanghai</a>
+                                </li>
+                                <li>
+                                    <span class="twemoji">{% include ".icons/octicons/mail-16.svg" %}</span>
+                                    <a href="mailto:704712641@qq.com">704712641@qq.com</a>
+                                </li>
+                                <li>
+                                    <span class="twemoji">{% include ".icons/octicons/link-16.svg" %}</span>
+                                    <a href="https://github.com/markoxu">https://github.com/markoxu</a>
+                                </li>
+                                <li>
+                                    <span class="twemoji">{% include ".icons/octicons/home-16.svg" %}</span>
+                                    <a href="https://markoxu.com">https://markoxu.com</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="profile">
+                                <h5>Hi, I'm Marko! 👋</h5>
+                                <p>
+                                    I'm interested in Full Stack Development and recently focus on Backend. 💪
+                                </p>
+                                <ul>
+                                    <li>💼 Software Development Engineer at Intel Corporation.</li>
+                                    <li>🎓 Master of East China Normal University, Shanghai, China.</li>
+                                    <li>🎯 Currently learning Firmware & Distributed Systems & Backend.</li>
+                                    <li>🌱 Learning about x86 architecture and open source projects.</li>
+                                    <li>📚 Reading more about Big Data & Cloud Native & Investment.</li>
+                                    <li>✍🏻 Writing technical articles and personal thoughts or ideas <a
+                                            href="https://www.markoxu.com/"> here</a>.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="md-container secondary-section">
+    <div class="g">
+        <div class="section follow">
+            <div class="component-wrapper" style="display: block;">
+                <h4>文章分类</h4>
+                <div class="responsive-grid">
+                    <a class="card-wrapper" href="docs/code-interviews-offer/overview/">
+                        <div class="card">
+                            <div class="logo">
+                                <span class="twemoji">
+                    {% include ".icons/octicons/pencil-24.svg" %}
+                  </span>
+                            </div>
+                            <div class="card-content">
+                                <h5>剑指Offer</h5>
+                                <p>
+                                    题目汇总
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-wrapper" href="docs/leetcode/overview/">
+                        <div class="card">
+                            <div class="logo">
+                                <span class="twemoji">{% include ".icons/octicons/pencil-24.svg" %}</span>
+                            </div>
+                            <div class="card-content">
+                                <h5>LeetCode</h5>
+                                <p>
+                                    题目汇总
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-wrapper" href="docs/market-center/overview/">
+                        <div class="card">
+                            <div class="logo">
+                                <span class="twemoji">{% include ".icons/octicons/pencil-24.svg" %}</span>
+                            </div>
+                            <div class="card-content">
+                                <h5>行情中心</h5>
+                                <p>
+                                    行情汇总
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div class="md-footer-copyright">
+                {% if config.copyright %}
+                <div class="md-footer-copyright__highlight">
+                    {{ config.copyright }}
+                </div>
+                {% endif %}
+                Made with
+                <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+                    Material for MkDocs
+                </a>
+            </div>
+            {% include "partials/social.html" %}
+        </div>
+    </div>
+</footer>
+{% endblock %}

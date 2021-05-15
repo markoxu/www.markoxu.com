@@ -1,37 +1,55 @@
 # Project information
-site_name: 'Material for MkDocs'
+site_name: '惜余'
 site_author: 'MarkoXu'
-site_url: ''
-site_description: 'mkdocs build page'
+site_url: 'https://www.markoxu.com/'
+site_description: '当一个有趣的人儿~'
 
 # Repository
-repo_name: 'MarkoXyz/Documents'
-repo_url: 'https://github.com/MarkoXyz/Documents'
 edit_uri: ''
-docs_dir: 'site/content'
-site_dir: 'output'
+docs_dir: docs/content/
+site_dir: 'www.markoxu.com'
 
 # Copyright
-copyright: Copyright &copy; 2021 MarkoXu
+copyright: 'Copyright &copy; 2021 MarkoXu'
 
 # Extra CSS
 extra_css:
-  - stylesheets/extra.css
+  - assets/css/extra.css
+
+# Extra JS
+extra_javascript:
+  - assets/js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # Configuration
 theme:
   name: material
-  custom_dir: site/overrides
-  language: 'en'
+  custom_dir: docs/overrides
+  language: zh
   palette:
-    scheme: default
-    primary: indigo
-    accent: indigo
+    # Light mode
+    - purple: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   font: false
   icon:
     repo: fontawesome/brands/github
     logo: logo
-  favicon: assets/images/favicon.png
+  favicon: assets/images/favicon.ico
   features:
     - navigation.tabs
     - navigation.instant
@@ -47,6 +65,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      toc_depth: 3
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -57,10 +76,12 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      linenums: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
+
       repo_url_shorthand: true
       user: squidfunk
       repo: mkdocs-material
@@ -78,94 +99,40 @@ markdown_extensions:
 
 # Plugins
 plugins:
-  - search:
-      lang: 'jp'
+  - search
 
 # Customization
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com
-    - icon: fontawesome/brands/weixin
-      link: https://weixin.qq.com/
-    - icon: fontawesome/brands/weibo
-      link: https://weibo.com
+      link: https://github.com/markoxu
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
     - icon: fontawesome/solid/paper-plane
-      link: mailto:<email-address>
+      link: https://gitter.im/wechaty/wechaty
+    - icon: fontawesome/solid/envelope
+      link: mailto:704712641@qq.com
 
 # Page tree
 nav:
-  - Home: index.md
-  - Documentation:
-    - Overview: docs/overview.md
-    - Getting Started:
-      - Install Copilot: docs/getting-started/install.md
-      - (Optional) Verify the installation: docs/getting-started/verify.md
-      - Deploy your first application: docs/getting-started/first-app-tutorial.md
-    - Concepts:
-      - Overview: docs/concepts/overview.md
-      - Applications: docs/concepts/applications.md
-      - Environments: docs/concepts/environments.md
-      - Services: docs/concepts/services.md
-      - Jobs: docs/concepts/jobs.md
-      - Pipelines: docs/concepts/pipelines.md
-    - Credentials: docs/credentials.md
-    - Manifest:
-      - Overview: docs/manifest/overview.md
-      - Load Balanced Web Service: docs/manifest/lb-web-service.md
-      - Backend Service: docs/manifest/backend-service.md
-      - Scheduled Job: docs/manifest/scheduled-job.md
-      - Pipeline: docs/manifest/pipeline.md
-    - Developing:
-      - Environment Variables: docs/developing/environment-variables.md
-      - Secrets: docs/developing/secrets.md
-      - Service Discovery: docs/developing/service-discovery.md
-      - Additional AWS Resources: docs/developing/additional-aws-resources.md
-      - Sidecars: docs/developing/sidecars.md
-    - Commands:
-      - Getting Started:
-        - init: docs/commands/init.md
-        - docs: docs/commands/docs.md
-      - Develop:
-        - app init: docs/commands/app-init.md
-        - app ls: docs/commands/app-ls.md
-        - app show: docs/commands/app-show.md
-        - app delete: docs/commands/app-delete.md
-        - env init: docs/commands/env-init.md
-        - env ls: docs/commands/env-ls.md
-        - env show: docs/commands/env-show.md
-        - env delete: docs/commands/env-delete.md
-        - job init: docs/commands/job-init.md
-        - job ls: docs/commands/job-ls.md
-        - job package: docs/commands/job-package.md
-        - job deploy: docs/commands/job-deploy.md
-        - job delete: docs/commands/job-delete.md
-        - svc init: docs/commands/svc-init.md
-        - svc ls: docs/commands/svc-ls.md
-        - svc show: docs/commands/svc-show.md
-        - svc logs: docs/commands/svc-logs.md
-        - svc status: docs/commands/svc-status.md
-        - svc package: docs/commands/svc-package.md
-        - svc deploy: docs/commands/svc-deploy.md
-        - svc delete: docs/commands/svc-delete.md
-        - task run: docs/commands/task-run.md
-        - task delete: docs/commands/task-delete.md
-      - Release:
-        - pipeline init: docs/commands/pipeline-init.md
-        - pipeline update: docs/commands/pipeline-update.md
-        - pipeline ls: docs/commands/pipeline-ls.md
-        - pipeline show: docs/commands/pipeline-show.md
-        - pipeline status: docs/commands/pipeline-status.md
-        - pipeline delete: docs/commands/pipeline-delete.md
-        - deploy: docs/commands/deploy.md
-      - Addons:
-        - storage init: docs/commands/storage-init.md
-      - Settings:
-        - version: docs/commands/version.md
-        - completion: docs/commands/completion.md
-  - Community:
-      - Get Involved: community/get-involved.md
-      - Guides and resources: community/guides.md
-
+  - 首页: index.md
+  - 文章列表:
+    - 文章索引: docs/overview.md
+    - 剑指Offer:
+      - 题目汇总: docs/code-interviews-offer/overview.md
+      - 第1章: docs/code-interviews-offer/chapter-first.md
+      - 第2章: docs/code-interviews-offer/chapter-second.md
+      - 第3章: docs/code-interviews-offer/chapter-third.md
+      - 第4章: docs/code-interviews-offer/chapter-forth.md
+      - 第5章: docs/code-interviews-offer/chapter-fifth.md
+      - 第6章: docs/code-interviews-offer/chapter-sixth.md
+      - 第7章: docs/code-interviews-offer/chapter-seventh.md
+    - LeetCode:
+      - 题目汇总: docs/leetcode/overview.md
+    - 行情中心:
+        - 行情汇总: docs/market-center/overview.md
+        - 涨跌统计: docs/market-center/zdtj.md
+        - 大盘云图: docs/market-center/dpyt.md
+        - 指数估值: docs/market-center/zsgz.md
+  - 友情链接: docs/friends-link/friends-link.md
+  - 关于博主: docs/about-me/about-me.md

@@ -1,0 +1,57 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+
+
+{% extends "base.html" %}
+
+
+{% block extrahead %}
+{{ super() }}
+<!-- Gitter -->
+<script>
+((window.gitter = {}).chat = {}).options = {
+  room: 'markoxu/blog'
+};
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js"
+        async defer>
+</script>
+<!-- Baidu Tongji -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4daf60cd3a4e4fc74c4cb81e034998a3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FYQYFLFJB2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FYQYFLFJB2');
+</script>
+{% endblock %}
+
+
+{#-
+{% block disqus %}
+<script src="https://utteranc.es/client.js"
+        repo="ouuan/blog-comments"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+{% endblock %}
+-#}
+
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}
