@@ -6,7 +6,7 @@ $.getJSON('../../../assets/data/zsgz.json', function (stock) {
         for (var i = 0; i < stock['zsgz'].length; i++) {
             for(var j = 0; j < stock['zsgz'][i]['children'].length; j++) {
                 var child = stock['zsgz'][i]['children'][j];
-                var id = child['value'][9];
+                var id = child['value'][8];
                 if (id == 1) {child['itemStyle'] = {'color': '#414554'}; }
                 else if (id == 2) {child['itemStyle'] = {'color': '#0fae9d'}; }
                 else if (id == 3) {child['itemStyle'] = {'color': '#ffac12'}; }

@@ -21,12 +21,12 @@ I'm interested in Full Stack Development and recently focus on Backend. 💪
 
 ??? note "some achievements"
     <p align="center">
-    <a href= "https://dummyimage.com/300x300/eee/aaa"><img src="https://dummyimage.com/300x300/eee/aaa" height="100" width="100"/></a>
-    <a href= "https://dummyimage.com/300x300/eee/aaa"><img src="https://dummyimage.com/300x300/eee/aaa" height="100" width="100"/></a>
-    <a href= "https://dummyimage.com/300x300/eee/aaa"><img src="https://dummyimage.com/300x300/eee/aaa" height="100" width="100"/></a>
-    <a href= "https://dummyimage.com/300x300/eee/aaa"><img src="https://dummyimage.com/300x300/eee/aaa" height="100" width="100"/></a>
-    <a href= "https://dummyimage.com/300x300/eee/aaa"><img src="https://dummyimage.com/300x300/eee/aaa" height="100" width="100"/></a>
-    <a href= "https://dummyimage.com/300x300/eee/aaa"><img src="https://dummyimage.com/300x300/eee/aaa" height="100" width="100"/></a>
+    <a href= ""><img src="../../../assets/images/avatar.png" height="100" width="100"/></a>
+    <a href= ""><img src="../../../assets/images/avatar.png" height="100" width="100"/></a>
+    <a href= ""><img src="../../../assets/images/avatar.png" height="100" width="100"/></a>
+    <a href= ""><img src="../../../assets/images/avatar.png" height="100" width="100"/></a>
+    <a href= ""><img src="../../../assets/images/avatar.png" height="100" width="100"/></a>
+    <a href= ""><img src="../../../assets/images/avatar.png" height="100" width="100"/></a>
     </p>
     - 👑   Some GitHub statistical reports:
     <p align="center">

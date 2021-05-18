@@ -109,7 +109,7 @@ extra:
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/r/squidfunk/mkdocs-material/
     - icon: fontawesome/solid/paper-plane
-      link: https://gitter.im/wechaty/wechaty
+      link: https://gitter.im/markoxu/blog
     - icon: fontawesome/solid/envelope
       link: mailto:704712641@qq.com
 
