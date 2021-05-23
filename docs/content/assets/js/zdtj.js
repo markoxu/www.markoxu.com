@@ -117,7 +117,7 @@ $.get('../../../assets/data/zdtj.json', function (stock) {
                 style: {fill: 'rgba(255, 255, 255, 0.3)', text: 'MARKOXU.COM', font: 'bold 15px sans-serif'}
             }]
         }],
-        grid: {top: '10%', right:'5%', bottom: '0', left:'5%', containLabel: true},
+        grid: {top: '15%', right:'5%', bottom: '0', left:'5%', containLabel: true},
         xAxis: [{
             data: stock['zdfb']['zd_num'],
             show:false,
