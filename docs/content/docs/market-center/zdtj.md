@@ -9,7 +9,6 @@
 ## 涨跌停数
 <div id="figure2" style="width:100%; height:400px;"></div>
 
-<script src="../../../assets/js/jquery.min.js"></script>
 <script src="../../../assets/js/echarts.min.js"></script>
 <script src="../../../assets/js/zdtj.js"></script>
 

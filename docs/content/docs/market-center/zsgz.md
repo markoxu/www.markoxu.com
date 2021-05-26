@@ -2,7 +2,6 @@
 
 <div id="figure0" style="width:100%;height:800px;"></div>
 
-<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/zsgz.js"> </script>
 
