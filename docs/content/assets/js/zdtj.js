@@ -69,7 +69,7 @@ $.get('../../../assets/data/zdtj.json', function (stock) {
     figure0.setOption(option);
 
     /* figure1 zdfb */
-    var xbar = ['-10%','-8%','-6%','-4%','-2%','0%','2%','4%','6%','8%','10%'];
+    var zdbar = ['-10%','-8%','-6%','-4%','-2%','0%','2%','4%','6%','8%','10%'];
     var znum = stock['zdfb']['znum'];
     var dnum = stock['zdfb']['dnum'];
     var option = {
@@ -84,7 +84,7 @@ $.get('../../../assets/data/zdtj.json', function (stock) {
             formatter(params) {
                 if(params[0] != undefined && params[0].name.length != 0) {
                     return `<div class="tooltip-title">
-                            <div>${xbar[params[0].dataIndex]}~${xbar[params[0].dataIndex+1]}</div>
+                            <div>${zdbar[params[0].dataIndex]}~${zdbar[params[0].dataIndex+1]}</div>
                             <div><span style="width:10px;height:10px;display:inline-block;background:${params[0].color}"></span> ${params[0].data}</div>
                             </div>`;
                 }
@@ -125,7 +125,7 @@ $.get('../../../assets/data/zdtj.json', function (stock) {
             axisPointer: {show: false},
             boundaryGap: false,
             position: 'bottom',
-            data: xbar,
+            data: zdbar,
         }],
         yAxis: {
             type: 'value',
