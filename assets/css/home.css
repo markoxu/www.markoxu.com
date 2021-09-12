@@ -1,0 +1,280 @@
+@media only screen and (max-width: 1220px) {
+  .md-header {
+    box-shadow: 0 0 .2rem rgba(0,0,0,.1),0 .2rem .4rem rgba(0,0,0,.2);
+    transition: color 250ms,background-color 250ms,box-shadow 250ms;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .md-sidebar--secondary {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    display: none;
+  }
+}
+
+.md-main {
+  flex-grow: 0;
+  background-color: hsl(0 0% 9%);
+}
+
+.md-content {
+  display: none;
+}
+
+.tx-hero {
+  max-width: 1000px;
+  display: flex;
+  padding: .4rem;
+  margin: 0 auto;
+  flex-grow: 0;
+}
+
+.information-wrapper .responsive-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .information-wrapper .responsive-grid {
+    grid-template-columns: 350px 750px;
+  }
+}
+
+.information-wrapper .responsive-grid .card {
+  position: relative;
+  background-color:  #fff none repeat scroll 0% 0%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  height: 100%;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
+
+@media screen and (min-width: 75rem) {
+  .information-wrapper .responsive-grid .card {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media screen and (min-width: 36rem) {
+  .information-wrapper .responsive-grid .card {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.information-wrapper .responsive-grid .card .card-content {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  width: 100%;
+}
+
+.information-wrapper .responsive-grid .card .card-content h5 {
+  color: var(--md-typeset-color);
+  margin: 0;
+  text-transform: initial;
+  font-size: 30px;
+}
+
+.information-wrapper .responsive-grid .card .card-content ul {
+  margin-left: 0;
+}
+
+.information-wrapper .responsive-grid .card .card-content li {
+  color: var(--md-code-fg-color);
+  margin: 0;
+  font-size: 20px;
+  list-style: none;
+}
+
+.information-wrapper .responsive-grid .card .card-content .information p {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.information-wrapper .responsive-grid .card .card-content .information a {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.information-wrapper .responsive-grid .card .card-content .information a:hover {
+  font-weight: 600;
+  color: var(--md-typeset-a-color);
+  background: var(--md-accent-fg-color--transparent);
+}
+
+.information-wrapper .responsive-grid .card .card-content .profile p {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+  color: var(--md-code-fg-color);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.information-wrapper .responsive-grid .card .card-content .profile a {
+  background: rgba(0, 0, 0, 0.05) none repeat scroll 0% 0%;
+  font-size: 20px;
+  line-height: 30px;
+  transition: color 125ms;
+  color: var(--md-typeset-a-color);
+  padding: 2px 6px;
+  margin: 0px 1px;
+  border-radius: 4px;
+  display: inline;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.information-wrapper .responsive-grid .card .card-content .profile a:hover {
+  color: var(--md-typeset-a-color);
+  background: var(--md-accent-fg-color--transparent);
+}
+
+.information-wrapper .responsive-grid .card .card-content .avatar img {
+  background: rgba(0, 0, 0, 0.05) none repeat scroll 0% 0%;
+  padding: 6px;
+  height:200px;
+  width:200px;
+  border-radius:50%;
+}
+
+@media screen and (max-width: 1012px) {
+  .information-wrapper .responsive-grid .card .card-content .avatar img {
+    padding: 6px;
+    height:100px;
+    width:100px;
+  }
+}
+
+.secondary-section {
+  background: var(--md-code-bg-color);
+}
+
+@media screen and (max-width: 1012px) {
+  .secondary-section {
+    display: block;
+  }
+}
+
+.secondary-section .g {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 40px;
+  max-width: 1280px;
+}
+
+.secondary-section .g .section {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: normal;
+  padding: 20px 0px;
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .secondary-section .g .section .component-wrapper .responsive-grid {
+    grid-template-columns: repeat(3, 400px);
+  }
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid a.card-wrapper {
+  text-decoration: none;
+  transition: none;
+  background: none;
+  padding: 0;
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card {
+  position: relative;
+  background-color:  #fff none repeat scroll 0% 0%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  height: 100%;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.09) 0.3125rem 0.3125rem 0px -0.0625rem, rgba(0, 0, 0, 0.15) 0px 0.25rem 0.5rem 0px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0.3125rem 0.3125rem 0px -0.0625rem, rgba(0, 0, 0, 0.26) 0px 0.25rem 0.5rem 0px;
+}
+
+@media screen and (min-width: 75rem) {
+  .secondary-section .g .section .component-wrapper .responsive-grid .card {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media screen and (min-width: 36rem) {
+  .secondary-section .g .section .component-wrapper .responsive-grid .card {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card .logo {
+  margin-right: 0.75rem;
+  width: 1.2rem;
+  min-width: 1.2rem;
+  fill: var(--md-typeset-color);
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card .card-content {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  width: 100%;
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card .card-content h5 {
+  color: var(--md-typeset-color);
+  margin: 0;
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card .card-content p {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.65rem;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.information-wrapper span.em {
+  color: rgb(61, 61, 61);
+}
+
+.md-header[data-md-state=shadow] {
+  box-shadow: none;
+}
