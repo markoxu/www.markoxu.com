@@ -143,3 +143,4 @@ scripts/
 .idea/
 build.sh
 drafts/
+.vscode/
