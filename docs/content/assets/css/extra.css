@@ -66,3 +66,7 @@ span.type {
   font-size: 80%;
   text-align: center;
 }
+
+.md-footer__link--prev .md-footer__title {
+  display: block;
+}

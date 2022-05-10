@@ -1,11 +1,11 @@
 {#-
-This file was automatically generated - do not edit
+  This file was automatically generated - do not edit
 -#}
 
 
 {% extends "main.html" %}
 
-
+{#-
 {% block announce %}
 <marquee behavior="alternate" direction="right" scrollamount="2">
     <span class="twemoji">
@@ -14,6 +14,7 @@ This file was automatically generated - do not edit
     <strong>Welcome to MarkoXu Blog.</strong>
 </marquee>
 {% endblock %}
+-#}
 
 
 {% block tabs %}
@@ -82,7 +83,7 @@ This file was automatically generated - do not edit
             <div class="component-wrapper" style="display: block;">
                 <h4>文章分类</h4>
                 <div class="responsive-grid">
-                    <a class="card-wrapper" href="docs/code-interviews-offer/overview/">
+                    <a class="card-wrapper" href="docs/code-interviews-offer/chapter-first/">
                         <div class="card">
                             <div class="logo">
                                 <span class="twemoji">
@@ -97,7 +98,7 @@ This file was automatically generated - do not edit
                             </div>
                         </div>
                     </a>
-                    <a class="card-wrapper" href="docs/leetcode/overview/">
+                    <a class="card-wrapper" href="docs/leetcode/leetcode/">
                         <div class="card">
                             <div class="logo">
                                 <span class="twemoji">{% include ".icons/octicons/pencil-24.svg" %}</span>
@@ -110,7 +111,33 @@ This file was automatically generated - do not edit
                             </div>
                         </div>
                     </a>
-                    <a class="card-wrapper" href="docs/market-center/overview/">
+                    <a class="card-wrapper" href="docs/git-tutorial/git-flow/">
+                        <div class="card">
+                            <div class="logo">
+                                <span class="twemoji">{% include ".icons/octicons/pencil-24.svg" %}</span>
+                            </div>
+                            <div class="card-content">
+                                <h5>Git</h5>
+                                <p>
+                                    学习笔记
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-wrapper" href="docs/competition/2018-huawei-codecraft/">
+                        <div class="card">
+                            <div class="logo">
+                                <span class="twemoji">{% include ".icons/octicons/pencil-24.svg" %}</span>
+                            </div>
+                            <div class="card-content">
+                                <h5>数据比赛</h5>
+                                <p>
+                                    题目汇总
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-wrapper" href="docs/market-center/zdtj/">
                         <div class="card">
                             <div class="logo">
                                 <span class="twemoji">{% include ".icons/octicons/pencil-24.svg" %}</span>
@@ -118,7 +145,7 @@ This file was automatically generated - do not edit
                             <div class="card-content">
                                 <h5>行情中心</h5>
                                 <p>
-                                    行情汇总
+                                    行情数据
                                 </p>
                             </div>
                         </div>
@@ -135,22 +162,7 @@ This file was automatically generated - do not edit
 <footer class="md-footer">
     <div class="md-footer-meta md-typeset">
         <div class="md-footer-meta__inner md-grid">
-            <div class="md-footer-copyright">
-                {% if config.copyright %}
-                <div class="md-footer-copyright__highlight">
-                    {{ config.copyright }}
-                </div>
-                {% endif %}
-                Made with
-                <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-                    Material for MkDocs
-                </a>
-                <div class="md-footer-copyright__highlight">
-                    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">
-                        粤ICP备20063259号
-                    </a>
-                </div>
-            </div>
+            {% include "partials/copyright.html" %}
             {% include "partials/social.html" %}
         </div>
     </div>
