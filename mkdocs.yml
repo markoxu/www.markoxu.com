@@ -2,7 +2,8 @@
 site_name: '惜余'
 site_author: 'MarkoXu'
 site_url: 'https://www.markoxu.com/'
-site_description: '当一个有趣的人儿~'
+site_description: '严于律己，宽以待人'
+site_registration: 粤ICP备20063259号
 
 # Repository
 edit_uri: ''
@@ -10,7 +11,7 @@ docs_dir: docs/content/
 site_dir: 'www.markoxu.com'
 
 # Copyright
-copyright: 'Copyright &copy; 2021 MarkoXu'
+copyright: 'Copyright &copy; 2015 - 2022 MarkoXu'
 
 # Extra CSS
 extra_css:
@@ -51,8 +52,10 @@ theme:
     logo: logo
   favicon: assets/images/favicon.ico
   features:
+    - navigation.indexes
     - navigation.tabs
     - navigation.instant
+    - toc.integrate
 
 # Extensions
 markdown_extensions:
@@ -119,7 +122,6 @@ nav:
   - 文章列表:
     - 文章索引: docs/overview.md
     - 剑指Offer:
-      - 题目汇总: docs/code-interviews-offer/overview.md
       - 第1章: docs/code-interviews-offer/chapter-first.md
       - 第2章: docs/code-interviews-offer/chapter-second.md
       - 第3章: docs/code-interviews-offer/chapter-third.md
@@ -128,9 +130,14 @@ nav:
       - 第6章: docs/code-interviews-offer/chapter-sixth.md
       - 第7章: docs/code-interviews-offer/chapter-seventh.md
     - LeetCode:
-      - 题目汇总: docs/leetcode/overview.md
+      - 题目汇总: docs/leetcode/leetcode.md
+    - Git:
+      - git分支模型: docs/git-tutorial/git-flow.md
+    - 数据比赛:
+      - 2018华为软挑大赛: docs/competition/2018-huawei-codecraft.md
+      - 2020阿里天池大赛: docs/competition/2020-ali-aiops-competition.md
+      - 2021阿里天池大赛: docs/competition/2021-ali-aiops-competition.md
     - 行情中心:
-        - 行情汇总: docs/market-center/overview.md
         - 涨跌统计: docs/market-center/zdtj.md
         - 大盘云图: docs/market-center/dpyt.md
         - 指数估值: docs/market-center/zsgz.md
