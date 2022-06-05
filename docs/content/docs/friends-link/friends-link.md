@@ -32,7 +32,7 @@ hide:
 			</div>
 			<div class="name">@捕蛇者说</div>
 		</a>
-		<div class="description">Stay simple && Stay Naive.</div>
+		<div class="description">聊聊编程、程序员和 Python</div>
 	</div>
 	<div class="user">
 		<a href="https://www.codedump.info/" target="_blank">
@@ -42,5 +42,23 @@ hide:
 			<div class="name">@codedump</div>
 		</a>
 		<div class="description">codedump</div>
+	</div>
+	<div class="user">
+		<a href="https://realpython.com/" target="_blank">
+			<div class="avatar-wrapper">
+				<img src="https://cdn.realpython.com/static/favicon.68cbf4197b0c.png"/>
+			</div>
+			<div class="name">@realpython</div>
+		</a>
+		<div class="description">Python Tutorials – Real Python</div>
+	</div>
+	<div class="user">
+		<a href="https://draven.co/" target="_blank">
+			<div class="avatar-wrapper">
+				<img src="https://draven.co/favicon.ico"/>
+			</div>
+			<div class="name">@面向信仰编程</div>
+		</a>
+		<div class="description">why's the design</div>
 	</div>
 </div>
